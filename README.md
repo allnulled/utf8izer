@@ -1,6 +1,10 @@
 # utf8izer
 
+![](https://img.shields.io/badge/version-1.0.0-green.svg) ![](https://img.shields.io/badge/tests-passing-green.svg) ![](https://img.shields.io/badge/coverage-no-red.svg)
+
 Encode files from CLI or API, comfortably.
+
+[![NPM](https://nodei.co/npm/utf8izer.png?stars&downloads)](https://www.npmjs.com/package/utf8izer)
 
 ## Installation
 
