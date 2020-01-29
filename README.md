@@ -1,20 +1,22 @@
 # utf8izer
 
-Convert files into UTF-8 encoded files from CLI or API comfortably.
+Encode files from CLI or API, comfortably.
 
 ## Installation
 
-`npm i -g utf8izer`
+`$ npm i -g utf8izer`
 
 ## Usage
 
-There is an API and a CLI available for `utf8izer`.
+There is an **API** and a **CLI** available for `utf8izer`.
 
 ### CLI usage
 
-Simply pass all the files, and they will be converted to UTF-8 encoded files:
+Pass the files and, optionally, the original and final encodings:
 
-`utf8izer file1.csv file2.txt file3.data`
+```bash
+utf8izer --from ascii --to utf8 file1.csv file2.txt file3.data
+```
 
 After this, a small report will be given by console.
 
@@ -26,21 +28,16 @@ Import the module:
 const Utf8izer = require("utf8izer");
 ```
 
-Usage with strings:
+Use the main class:
 
 ```js
-const stringToUtf8 = Utf8izer.convertString("Some string that is not UTF-8");
-```
-
-Usage with files:
-
-```js
-Utf8izer.convertFiles(["file1.csv", "file2.txt", "file3.data"]).then(function(info) {
-    // You can check the files that could not be converted like this:
+Utf8izer.convertFiles(["file1.csv", "file2.txt", "file3.data"], {
+    from: "ascii",
+    to: "utf8"
+}).then(function(info) {
     if(info.errors.length) {
         return console.log("Errors on UTF8 file conversions:", info.errors);
     }
-    // Otherwise, everything was fine, and all the files were converted.
 });
 ```
 

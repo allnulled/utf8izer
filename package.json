@@ -1,0 +1,30 @@
+{
+  "name": "utf8izer",
+  "version": "1.0.0",
+  "description": "Encode files from CLI or API, comfortably.",
+  "bin": {
+    "utf8izer": "bin/utf8izer.bin.js"
+  },
+  "main": "src/utf8izer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^15.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/utf8izer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allnulled/utf8izer/issues"
+  },
+  "homepage": "https://github.com/allnulled/utf8izer#readme"
+}
