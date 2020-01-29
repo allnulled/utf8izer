@@ -1,6 +1,6 @@
 # utf8izer
 
-![](https://img.shields.io/badge/version-1.0.0-green.svg) ![](https://img.shields.io/badge/tests-passing-green.svg) ![](https://img.shields.io/badge/coverage-no-red.svg)
+![](https://img.shields.io/badge/version-1.0.1-green.svg) ![](https://img.shields.io/badge/tests-passing-green.svg) ![](https://img.shields.io/badge/coverage-no-red.svg)
 
 Encode files from CLI or API, comfortably.
 
